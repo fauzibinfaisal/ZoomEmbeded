@@ -11,8 +11,8 @@ import MobileRTC
 
 class ViewController: UIViewController {
     
-let meetingNo = "73813154473"
-let meetingPass = "9KaeCC"
+let meetingNo = "75655817507"
+let meetingPass = "23sELK"
     
 let kSDKUserName = "ujik ahmad"
     
@@ -28,17 +28,23 @@ let kSDKUserName = "ujik ahmad"
         let seconds = 4.0
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
             // Put your code which should be executed with a delay here
-            let paramDict = [kMeetingParam_Username:self.kSDKUserName,kMeetingParam_MeetingNumber:self.meetingNo, kMeetingParam_MeetingPassword: self.meetingPass]
-            let getservice = MobileRTC.shared().getMeetingService()
+            let paramDict = [kMeetingParam_Username:self.kSDKUserName,
+                             kMeetingParam_MeetingNumber:self.meetingNo,
+                             kMeetingParam_MeetingPassword: self.meetingPass]
+            
+            let mobileRTC = MobileRTC.shared()
+            mobileRTC.getMeetingSettings()?.disableShowVideoPreview(whenJoinMeeting: true)
+
+            let getservice = mobileRTC.getMeetingService()
             if let service = getservice {
                  service.delegate = self
-                 
+
                  let response = service.joinMeeting(with: paramDict)
                  print("onJoinMeeting, response: \(response)")
                 
-                
             } else {
                 print("get service \(getservice)")
+                
             }
 
         }

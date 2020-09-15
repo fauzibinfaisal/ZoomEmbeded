@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EBCD568F250F255C00D41B53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCD568E250F255C00D41B53 /* AppDelegate.swift */; };
-		EBCD5691250F255C00D41B53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCD5690250F255C00D41B53 /* SceneDelegate.swift */; };
 		EBCD5693250F255C00D41B53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCD5692250F255C00D41B53 /* ViewController.swift */; };
 		EBCD5696250F255C00D41B53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBCD5694250F255C00D41B53 /* Main.storyboard */; };
 		EBCD5698250F255E00D41B53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBCD5697250F255E00D41B53 /* Assets.xcassets */; };
@@ -38,7 +37,6 @@
 /* Begin PBXFileReference section */
 		EBCD568B250F255C00D41B53 /* ZoomEmbeded.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomEmbeded.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBCD568E250F255C00D41B53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EBCD5690250F255C00D41B53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EBCD5692250F255C00D41B53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EBCD5695250F255C00D41B53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBCD5697250F255E00D41B53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -84,7 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				EBCD568E250F255C00D41B53 /* AppDelegate.swift */,
-				EBCD5690250F255C00D41B53 /* SceneDelegate.swift */,
 				EBCD5692250F255C00D41B53 /* ViewController.swift */,
 				EBCD5694250F255C00D41B53 /* Main.storyboard */,
 				EBCD5697250F255E00D41B53 /* Assets.xcassets */,
@@ -186,7 +183,6 @@
 			files = (
 				EBCD5693250F255C00D41B53 /* ViewController.swift in Sources */,
 				EBCD568F250F255C00D41B53 /* AppDelegate.swift in Sources */,
-				EBCD5691250F255C00D41B53 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +336,7 @@
 					"$(PROJECT_DIR)/ZoomEmbeded/lib",
 				);
 				INFOPLIST_FILE = ZoomEmbeded/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -364,7 +360,7 @@
 					"$(PROJECT_DIR)/ZoomEmbeded/lib",
 				);
 				INFOPLIST_FILE = ZoomEmbeded/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
