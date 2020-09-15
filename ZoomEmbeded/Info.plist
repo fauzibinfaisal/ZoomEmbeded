@@ -2,6 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>For people to hear you during meetings, (PROJECT_NAME) needs access to your microphone.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>To share photos, (PROJECT_NAME) needs access to your photo library.</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>To integrate Zoom meetings with your schedule, (PROJECT_NAME) needs access to your calendar.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>For people to hear you during meetings, (PROJECT_NAME) needs access to your microphone.</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>We will use your Bluetooth to access your Bluetooth headphones.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
