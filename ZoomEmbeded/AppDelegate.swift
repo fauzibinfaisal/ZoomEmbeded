@@ -14,10 +14,15 @@ import MobileCoreServices
 
 class AppDelegate: UIResponder, UIApplicationDelegate, MobileRTCAuthDelegate {
     
-
+    var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        let navigationController = UINavigationController(rootViewController: newViewController)
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
         let mainSDK = MobileRTCSDKInitContext()
         mainSDK.domain = "zoom.us"
         MobileRTC.shared().initialize(mainSDK)
