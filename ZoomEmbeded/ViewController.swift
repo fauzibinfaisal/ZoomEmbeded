@@ -12,6 +12,7 @@ import MobileRTC
 class ViewController: UIViewController {
     
 let meetingNo = "73813154473"
+let meetingPass = "9KaeCC"
 let kSDKUserName = "ujik ahmad"
     override func viewDidLoad() {
     super.viewDidLoad()
@@ -22,13 +23,18 @@ let kSDKUserName = "ujik ahmad"
            return
     } else {
          // If the meeting number is not empty.
+        let paramDict = [kMeetingParam_Username:kSDKUserName,kMeetingParam_MeetingNumber:meetingNo, kMeetingParam_MeetingPassword: meetingPass]
          let getservice = MobileRTC.shared().getMeetingService()
          if let service = getservice {
              service.delegate = self
-             let paramDict =      [kMeetingParam_Username:kSDKUserName,kMeetingParam_MeetingNumber:meetingNo, kMeetingParam_MeetingPassword:"9KaeCC",kMeetingParam_WebinarToken:"Your Webinar Token"]
+             
              let response = service.joinMeeting(with: paramDict)
              print("onJoinMeeting, response: \(response)")
-          }
+            
+            
+         } else {
+            print("get service \(getservice)")
+        }
         }
       }
     
