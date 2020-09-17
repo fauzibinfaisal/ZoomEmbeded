@@ -11,10 +11,10 @@ import MobileRTC
 
 class ViewController: UIViewController {
     
-let meetingNo = "75655817507"
-let meetingPass = "23sELK"
+let meetingNo = "94750229825"
+let meetingPass = "77PP92"
     
-let kSDKUserName = "ujik ahmad"
+let kSDKUserName = "Fauzi Fauzi"
     
     override func viewDidLoad() {
     super.viewDidLoad()
@@ -30,7 +30,9 @@ let kSDKUserName = "ujik ahmad"
             // Put your code which should be executed with a delay here
             let paramDict = [kMeetingParam_Username:self.kSDKUserName,
                              kMeetingParam_MeetingNumber:self.meetingNo,
-                             kMeetingParam_MeetingPassword: self.meetingPass]
+                             kMeetingParam_MeetingPassword: self.meetingPass,
+                             kMeetingParam_NoAudio: false,
+                             kMeetingParam_NoVideo: false] as [String : Any]
             
             let mobileRTC = MobileRTC.shared()
             mobileRTC.getMeetingSettings()?.disableShowVideoPreview(whenJoinMeeting: true)

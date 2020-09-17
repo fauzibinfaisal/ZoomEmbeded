@@ -35,7 +35,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		EBCD568B250F255C00D41B53 /* ZoomEmbeded.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomEmbeded.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBCD568B250F255C00D41B53 /* Kimia Farma Mobile Zoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kimia Farma Mobile Zoom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBCD568E250F255C00D41B53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBCD5692250F255C00D41B53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EBCD5695250F255C00D41B53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 		EBCD568C250F255C00D41B53 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EBCD568B250F255C00D41B53 /* ZoomEmbeded.app */,
+				EBCD568B250F255C00D41B53 /* Kimia Farma Mobile Zoom.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,7 +126,7 @@
 			);
 			name = ZoomEmbeded;
 			productName = ZoomEmbeded;
-			productReference = EBCD568B250F255C00D41B53 /* ZoomEmbeded.app */;
+			productReference = EBCD568B250F255C00D41B53 /* Kimia Farma Mobile Zoom.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -342,7 +342,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.defauloper.ZoomEmbeded;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Kimia Farma Mobile Zoom";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -366,7 +366,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.defauloper.ZoomEmbeded;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Kimia Farma Mobile Zoom";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
